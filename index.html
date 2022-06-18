@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Resultados da Avaliação Diagnóstica</title>
+    <link rel="stylesheet" type="text/css"  href="css/estilo.css" />   
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+        <h1>Prefeitura Municipal de Porto Ferreira</h1>
+        <h2>Secretaria de Educação</h2>
+        <h3>Resultados da Avaliação Diagnóstica</h3>
+        
+    </header>
+    <div class="container">
+        <div>
+    <ul id="nav">
+		
+		<li><a href="#">Selecione sua UE</a>
+			<ul>
+				<li><a href="#" onclick="UE(1);">Agostinho Garcia</a></li>
+				<li><a href="#" onclick="UE(2);">Braulio Teixeira</a></li>
+				<li><a href="#" onclick="UE(3);">CAIC</a></li>
+				<li><a href="#" onclick="UE(4);">José Gonso</a></li>
+				<li><a href="#" onclick="UE(5);">Mário B. Thomaz</a></li>
+				<li><a href="#" onclick="UE(6);">Nadir Z. Ribaldo</a></li>
+				<li><a href="#" onclick="UE(7);">Noraide Mariano</a></li>
+				<li><a href="#" onclick="UE(8);">Ruth Barroso</a></li>
+				<li><a href="#" onclick="UE(9);">Wladimir Salzano</a></li>
+			</ul>
+		</li>
+		
+		
+					<li><a href="#">Fundamental 1</a>
+                        <ul>
+                            <li><a href="#" onclick="Ciclo(1);">1° Ano</a></li>
+                            <li><a href="#" onclick="Ciclo(2);">2° Ano</a></li>
+                            <li><a href="#" onclick="Ciclo(3);">3° Ano</a></li>
+                            <li><a href="#" onclick="Ciclo(4);">4° Ano</a></li>
+                            <li><a href="#" onclick="Ciclo(5);">5° Ano</a></li>
+                        </ul></li>
+                    <li><a href="#">Fundamental 2</a>
+                        <ul>
+                            <li><a href="#" onclick="Ciclo(6);">6° Ano</a></li>
+                            <li><a href="#" onclick="Ciclo(7);">7° Ano</a></li>
+                            <li><a href="#" onclick="Ciclo(8);">8° Ano</a></li>
+                            <li><a href="#" onclick="Ciclo(9);">9° Ano</a></li>
+                        </ul></li>
+
+                    </div>
+
+                    <div class="formulario">
+                        <form>
+                            <label for="Escola">Unidade Educacional:</label><br>
+                            <input type="text" id="Escola">
+                            <br>
+                            <label for="Ciclo">Ciclo:</label><br>
+                            <input type="text" id="fund">
+                            <br>
+                            <label for="Sala">Sala:</label>
+                            <label id="comp_"for="Comp">Identificador:</label>
+                            <br>
+                            <input type="text" id="sala">
+                            
+                            <select id="Comp">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                            </select>
+                            <br>
+                            <label for="Prof">Professor(a):</label><br>
+                            <input type="text" id="Prof" onkeypress="return event.charCode >= 65 && event.charCode <= 90 || event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32 || event.charCode >= 192 && event.charCode <= 251">
+                            <br>
+                            
+                            <label for="Nome">Aluno:</label><label for="Número" id="num">Nº:</label><br>
+                            <input type="text" id="Nome" onkeypress="return event.charCode >= 65 && event.charCode <= 90 || event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32 || event.charCode >= 192 && event.charCode <= 251">
+                            <input type="text" id="Numero" onkeypress="return event.charCode >= 48 && event.charCode <= 57"><br>
+                            <div class="buttons">
+                                <input type="button" id="Limpar" onclick="limpar();" value="Limpar" class="clicks">
+                                <input type="button" id="Gravar" value="Próximo" class="clicks">
+                                
+                            </div>
+                            
+                        </form>
+                        
+                    </div>
+                    <section class="btn_resp">
+                        <div class="resp">
+                        <input type="button" id="btn_01" class="circ" value="01" onclick="estado_btn(id);">
+                        <input type="button" id="btn_02" class="circ" value="02" onclick="estado_btn(id);">
+                        <input type="button" id="btn_03" class="circ" value="03" onclick="estado_btn(id);">
+                        <input type="button" id="btn_04" class="circ" value="04" onclick="estado_btn(id);">
+                        <input type="button" id="btn_05" class="circ" value="05" onclick="estado_btn(id);">
+                        <input type="button" id="btn_06" class="circ" value="06" onclick="estado_btn(id);">
+
+                        <input type="button" id="btn_07" class="circ" value="07" onclick="estado_btn(id);">
+                        <input type="button" id="btn_08"class="circ" value="08" onclick="estado_btn(id);">
+                        <input type="button" id="btn_09" class="circ" value="09" onclick="estado_btn(id);">
+                        <input type="button" id="btn_10" class="circ" value="10" onclick="estado_btn(id);">
+                        <input type="button" id="btn_11" class="circ" value="11" onclick="estado_btn(id);">
+                        <input type="button" id="btn_12" class="circ" value="12" onclick="estado_btn(id);">
+
+                        <input type="button" id="btn_13" class="circ" value="13" onclick="estado_btn(id);">
+                        <input type="button" id="btn_14" class="circ" value="14" onclick="estado_btn(id);">
+                        <input type="button" id="btn_15" class="circ" value="15" onclick="estado_btn(id);">
+                        <input type="button" id="btn_16" class="circ" value="16" onclick="estado_btn(id);">
+                        <input type="button" id="btn_17" class="circ" value="17" onclick="estado_btn(id);">
+                        <input type="button" id="btn_18" class="circ" value="18" onclick="estado_btn(id);">
+
+                        <input type="button" id="btn_19" class="circ" value="19" onclick="estado_btn(id);">
+                        <input type="button" id="btn_20" class="circ" value="20" onclick="estado_btn(id);">
+                        <input type="button" id="btn_21" class="circ" value="21" onclick="estado_btn(id);">
+                        <input type="button" id="btn_22" class="circ" value="22" onclick="estado_btn(id);">
+                        <input type="button" id="btn_23" class="circ" value="23" onclick="estado_btn(id);">
+                        <input type="button" id="btn_24" class="circ" value="24" onclick="estado_btn(id);">
+                        <input type="button" id="btn_25" class="circ" value="25" onclick="estado_btn(id);">
+
+                    </div>
+                    </section>
+                    </div> 
+                    
+                
+
+			
+		
+  </body>
+</html>
